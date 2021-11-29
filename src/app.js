@@ -8,6 +8,7 @@ const { Movie, movieArr } = require("./utils");
 
 //const movie = new Movie(args.movie, args.actor);
 //'args.movie' and 'args.actor' replace 'args[3]' and 'args[4]'we used this morning
+// this also means that the input can be in a different order as it is named.
 
 const app = (args) => {
     switch(process.argv[2]){
