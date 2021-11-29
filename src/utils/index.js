@@ -1,9 +1,10 @@
 const movieArr = [];
 
 class Movie {
-    constructor(title, actor) {
+    constructor(title, actor, director) {
         this.title = title;
         this.actor = actor;
+        this.director = director;
     }
 
     add() {
@@ -12,6 +13,6 @@ class Movie {
 }
 
 module.exports = {
-    Movie,
+    Movie, 
     movieArr,
 };

@@ -12,13 +12,13 @@ const { Movie, movieArr } = require("./utils");
 const app = (args) => {
     switch(process.argv[2]){
         case "add":
-            const movie = new Movie(args.title, args.actor);
+            const movie = new Movie(args.title, args.actor, args.director);
             movie.add();
             console.log(movieArr);
             break;
         case "add multi":
-            const movie1 = new Movie(args.title1, args.actor1);
-            const movie2 = new Movie(args.title2, args.actor2);
+            const movie1 = new Movie(args.title1, args.actor1, args.director1);
+            const movie2 = new Movie(args.title2, args.actor2, args.director2);
             movie1.add();
             movie2.add();
             console.log(movieArr);
