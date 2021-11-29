@@ -1,6 +1,6 @@
 const yargs = require("yargs");
 
-const { Movie, movieArr } = require("./utils");
+const { Movie, movieArr, /*Remove*/ } = require("./utils");
 
 //'yargs' returns an object. 'process' returns and array. object is easier for us to work with.
 // console.log(yargs.argv);
@@ -22,6 +22,18 @@ const app = (args) => {
             const movie2 = new Movie(args.title2, args.actor2, args.director2);
             movie1.add();
             movie2.add();
+            console.log(movieArr);
+            break;
+        case "remove last":
+            console.log("pre", movieArr);
+            // const rem = new Remove(args.postion);
+            // rem.remove();
+            //remove(args.position);
+            //movieArr.splice(args.position);
+            movieArr.pop();
+            console.log("post", movieArr);
+            break;   
+        case "list":
             console.log(movieArr);
             break;
         default:
