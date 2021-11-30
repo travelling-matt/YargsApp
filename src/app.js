@@ -48,3 +48,6 @@ app(yargs.argv);
 //node src/app.js "add" --title="spiderman" --actor="tom holland"
 //expected result
 //[ Movie { title: 'spiderman', actor: 'tom holland' } ]
+//current code also wants a director.
+//'=' not needed in 'run' argument e.g. 
+//node src/app.js "add" --title "Inception" --actor "Leonardo Di Caprio" --director "Christopher Nolan"

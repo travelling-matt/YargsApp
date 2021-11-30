@@ -1,16 +1,17 @@
-const movieArr = 
-    [
-        {
-        title: 'Inception',
-        actor: 'Leonardo Di Caprio',
-        director: 'Christopher Nolan'
-        },
-        {
-        title: 'Interstellar',
-        actor: 'Matthew McCaungahey',
-        director: 'Christopher Nolan'
-        }
-    ];
+const movieArr = []
+//array pre-populated to try and delete items:
+    // [
+    //     {
+    //     title: 'Inception',
+    //     actor: 'Leonardo Di Caprio',
+    //     director: 'Christopher Nolan'
+    //     },
+    //     {
+    //     title: 'Interstellar',
+    //     actor: 'Matthew McCaungahey',
+    //     director: 'Christopher Nolan'
+    //     }
+    // ];
 
 class Movie {
     constructor(title, actor, director) {
